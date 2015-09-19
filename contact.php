@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,29 +77,6 @@
                     <h3 class="section-heading">Fill out the form below to contact me.</h3>                   
 
 
-<div id="contact-form" class="clearfix">
-    <ul id="errors" class="">
-        <li id="info">There were some problems with your form submission:</li>
-    </ul>
-    <p id="success">Thanks for your message! I will get back to you ASAP!</p>
-    <form method="post" action="process.php">
-        <label for="name">Name: <span class="required">*</span></label>
-        <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" />
-         
-        <label for="email">Email Address: <span class="required">*</span></label>
-        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
-
-        <label for="message">Message: <span class="required">*</span></label>
-        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
-         
-        <span id="loading"></span>
-        <input type="submit" value="Send" id="submit-button" />
-        <p id="req-field-desc"><span class="required">*</span> Indicates a required field</p>
-    </form>
-</div>
-
-
-<!--
 <style type="text/css">
 
 p, h1, form, button{border:0; margin:0; padding:0;}
@@ -196,7 +175,8 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     </label>
 <textarea name="message" rows="6" cols="25"></textarea><br />
     <button type="submit" value="Send" style="margin-top:15px;">Send</button>
-<div class="spacer"></div>
+<div class="spacer">
+</div>
 
 <?php
 $name = $_POST['name'];
