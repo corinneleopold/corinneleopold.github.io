@@ -13,6 +13,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
@@ -20,6 +23,11 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,12 +87,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     
-                    <div class="intro-message">
-		        <h1>Corinne Leopold</h1>
+                    <div class="intro-message wow fadeInDown">
+		              <h1>Corinne Leopold</h1> 
+                        <div class="wow fadeInUp" style="-webkit-animation-delay: .6s;">
                         <h3>Computer Science and Statistics</h3>
-   <!--                 <hr class="intro-divider"> --!>
-                      <!--  <ul class="list-inline intro-social-buttons"> --!>
-                           
+                        </div>
+
+                      <!--  <ul class="list-inline intro-social-buttons"> --!>                          
                         </ul>
                     </div>
                 </div>
@@ -106,9 +115,10 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Hello, World!</h2>
-                    <p class="lead">I'm a sophomore at Purdue University majoring in Computer Science with a minor in Statistics, and seeking opportunities to gain experience in the field. My interests include software engineering, data science, cyber security, and machine learning, and I am passionate about promoting CS to aspiring young women. I spend my free time traveling to local middle and high schools in Indiana teaching students how to code. I look forward to collaborating with others to further my programming skills and tackle new challenges in computing!</p>              </div>                
-
+                    <h2 class="section-heading wow flipInX" 
+                        style="-webkit-animation-duration: 2.5s;">Hello, World!</h2>
+                    <p class="lead">I'm a sophomore at Purdue University double majoring in Computer Science and Statistics, and seeking opportunities to gain experience in the field. My interests include data science, machine learning, and software engineering, and I am passionate about promoting CS to aspiring young women. As a freshman at Purdue, I cofounded Purdue's Mentors for Aspiring Girls in Computing organization, dedicated to teaching girls across Indiana how to code. I look forward to collaborating with others to further my programming skills and tackle new challenges in computing!</p>              
+                    </div>                
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/robot.jpg" alt="">
                 </div>
@@ -128,7 +138,8 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Cisco Internship</h2>
+                    <h2 class="section-heading wow flipInX" 
+                        style="-webkit-animation-duration: 2.5s;">Cisco Internship</h2>
                     <p class="lead">This past summer, after finishing my first year of college, I completed a cyber security internship with Cisco Systems in Research Triangle Park. I worked in the security department with Cisco's Active Threat Analytics team (formerly the Managed Threat Defense team). Read about the experience I gained <a target="_blank" href=experience.html>here</a>!</p>                </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                    <img class="img-responsive" src="img/ciscosign.jpg" alt="">
@@ -149,7 +160,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Girls Do Hack<br></h2>
+                    <h2 class="section-heading wow flipInX"
+                        style="-webkit-animation-duration: 2.5s;">Girls Do Hack<br></h2>
                     <p class="lead">The only Indiana student selected to attend Chicago Adler Planetarium's "Girls Do Hack" event in 2013, I gained hands-on experience in a cross-section of STEM activities including mobile app development, electrical engineering, 3D printing, and more. I returned in 2014 as a volunteer for the mobile app devleopment workshop, and plan to continue volunteering for the event. Read more <a target="_blank" href=experience.html>here</a>!</p>
 
                 </div>
@@ -173,7 +185,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Skills</h2>
+                    <h2 class="section-heading wow flipInX"
+                        style="-webkit-animation-duration: 2.5s;">Skills</h2>
                     <img class="img-responsive" width="260" src="img/technicalSkills.png" alt="">
             <!--        <p class="lead">&emsp;&emsp;&emsp;C<br>&emsp;&emsp;&emsp;Java<br>
                         &emsp;&emsp;&emsp;Linux<br>&emsp;&emsp;&emsp;Python<br>
@@ -272,6 +285,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/creative.js"></script>
+
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
 
 </body>
 
